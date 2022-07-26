@@ -1,0 +1,111 @@
+@use './base' as *;
+
+.profile {
+  position: relative;
+
+  .profile-background {
+    position: fixed;
+    background: url(../assets/profile-background.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .banner-background {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    height: $height-banner-profile;
+
+    &__vanta {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: $height-banner-profile;
+    }
+  }
+
+  .user {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+    &__container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__image-container {
+      margin: auto;
+      border-radius: 50%;
+      width: 5rem;
+      height: 5rem;
+      border: 3px solid #fff;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    &__info-container {
+      margin-top: 5px;
+      margin-inline: auto;
+      max-width: 16rem;
+    }
+
+    &__info-name {
+      text-align: center;
+      color: $grey-900;
+      font-size: $text-paragraph-1;
+    }
+
+    &__info-nickname {
+      text-align: center;
+      color: $grey-700;
+      font-size: $text-paragraph-4;
+    }
+
+    &__button-container {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  .content {
+    z-index: 2;
+    position: relative;
+    padding: 2rem $padding-responsive;
+    background-color: $blue-opacity-100;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2rem;
+      transform: translateY(-2);
+      left: 0;
+      width: 100%;
+      height: 2rem;
+      border-radius: 8rem 8rem 0 0;
+      background-color: $blue-opacity-100;
+    }
+  }
+}
+
+#vanta {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--height-vanta);
+}

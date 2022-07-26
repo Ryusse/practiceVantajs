@@ -1,0 +1,84 @@
+$blue-900: #6872a3;
+$blue-600: #2b3566;
+$blue-100: #03050f;
+
+$light-blue-700: #aaeafc;
+$light-blue-100: #0592ba;
+
+$purple-700: #dab5fa;
+$purple-100: #923bdf;
+
+$green-100: #45d1c2;
+
+$red-100: #fb4a71;
+
+$grey-900: #fafeff;
+$grey-700: #e7efff;
+
+$light-blue-opacity-100: rgba(5, 146, 186, 0.4);
+
+$blue-opacity-100: rgba(3, 5, 15, 0.95);
+
+$purple-opacity-100: rgba(82, 13, 139, 0.4);
+
+$green-opcity-100: rgba(69, 209, 194, 0.4);
+
+$height-banner-profile: 20rem;
+
+$text-heading-1: 2rem;
+$text-heading-2: 1.8rem;
+$text-heading-3: 1.5rem;
+
+$text-subheading-1: 1.3rem;
+$text-subheading-2: 1.1rem;
+
+$text-paragraph-1: 1rem;
+$text-paragraph-2: 0.9rem;
+$text-paragraph-3: 0.8rem;
+$text-paragraph-4: 0.7rem;
+
+$padding-responsive: 5vw;
+
+$button-size-xl: 12rem;
+$button-size-lg: 10rem;
+$button-size-md: 9rem;
+$button-size-sm: 8rem;
+
+* {
+  text-decoration: none;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+}
+
+main {
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--blue-900);
+}
+
+h1 {
+  line-height: 1.6;
+}
+
+p {
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+figure {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}

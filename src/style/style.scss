@@ -1,0 +1,71 @@
+@use 'base';
+@use 'button';
+@use 'profile';
+@use 'normalize';
+
+.wrapper {
+  max-width: 1700px;
+  margin: auto;
+}
+
+// .profile-body {
+//   position: absolute;
+//   top: -5rem;
+//   border-radius: 3.5rem 3.5rem 0 0;
+//   z-index: 20;
+//   padding: var(--padding-responsive);
+//   position: relative;
+//   background-color: var(--blue-600);
+// }
+
+// .profile__image-container {
+//   margin: 0 auto;
+//   background-color: var(--blue-600);
+//   width: 6rem;
+//   height: 6rem;
+//   padding: 8px;
+//   border-radius: 100%;
+//   display: grid;
+//   place-content: center;
+// }
+
+// .profile__image-container img {
+//   width: 5.8rem;
+//   height: 5.8rem;
+//   border: 4px solid var(--green-100);
+//   border-radius: 100%;
+// }
+
+// .personal-profile {
+//   display: grid;
+// }
+
+// .personal-profile__name {
+//   margin-top: 1rem;
+//   text-align: center;
+//   font-size: var(--text-subheading-1);
+//   color: var(--grey-900);
+//   font-weight: 500;
+// }
+
+// .personal-profile__nickname {
+//   font-size: var(--text-paragraph-3);
+//   color: var(--blue-900);
+//   text-align: center;
+//   margin-top: 0.1rem;
+//   font-weight: 500;
+// }
+
+// .personal-profile__description {
+//   margin-top: 1.4rem;
+//   color: var(--grey-900);
+//   font-weight: 400;
+// }
+// #animation {
+//   position: absolute;
+//   pointer-events: none;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+//   z-index: 20;
+// }

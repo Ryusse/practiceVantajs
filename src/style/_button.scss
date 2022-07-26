@@ -1,0 +1,39 @@
+@use './base' as *;
+
+.button {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: medium;
+
+  // &__primary {
+  //   margin-top: 1rem;
+  //   color: var(--grey-900);
+  //   background-color: var(--red-100);
+  // }
+
+  &__secondary {
+    &__outline {
+      &--light-blue {
+        width: $button-size-sm;
+        color: $light-blue-700;
+        border: 2px solid $light-blue-100;
+        background-color: $light-blue-opacity-100;
+        text-shadow: 0 0 10px $light-blue-100, 0 0 20px $light-blue-100,
+          0 0 40px $light-blue-100, 0 0 80px $light-blue-100,
+          0 0 160px $light-blue-100;
+      }
+
+      &--purple {
+        width: $button-size-sm;
+        color: $purple-700;
+        border: 2px solid $purple-100;
+        background-color: $purple-opacity-100;
+        text-shadow: 0 0 10px $purple-100, 0 0 20px $purple-100,
+          0 0 40px $purple-100, 0 0 80px $purple-100, 0 0 160px $purple-100;
+      }
+    }
+  }
+}
